@@ -1,6 +1,9 @@
 streamlit
 pydub
 numpy
-Levenshtein
 scipy
 matplotlib
+plotly
+captcha
+pillow
+pytest

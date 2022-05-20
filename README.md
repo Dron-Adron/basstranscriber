@@ -1,4 +1,3 @@
 # Bass Transcriber
 
-This is the best bass transcriber!
-Very very good transcriber
+This is the VKR project called Bass Transcriber. Feel free to make research of it =)
