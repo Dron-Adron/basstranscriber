@@ -20,7 +20,6 @@ def app():
     if captcha_text == captcha_user_input:
         uploaded_file = st.file_uploader("Choose a .wav file", type='wav')
         if uploaded_file is not None:
-            # To read file as bytes:
             bytes_data = uploaded_file.getvalue()
             with tempfile.NamedTemporaryFile(suffix='.wav') as f:
                 f.write(bytes_data)
@@ -33,7 +32,7 @@ def app():
             interval = st.number_input('Current interval of chart', value = 1)
             df = plot_song(song, interval)
             fig = px.line(df, markers=True)
-            fig.update_layout(title='Cut your audio on min silence len and min silence threshold', 
+            fig.update_layout(title='Cut your audio on min silence length and min silence threshold', 
                                 xaxis_title='milliseconds/'+str(interval), 
                                 yaxis_title='dBFS', 
                                 hovermode="x")

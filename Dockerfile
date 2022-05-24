@@ -1,4 +1,4 @@
-FROM python:3.8
+FROM python:3.8.10
 
 RUN apt-get -y update && apt-get install -y build-essential ffmpeg libavcodec-extra
 
